@@ -1,0 +1,23 @@
+@import './globals';
+@import '//assets/scss/normalize';
+
+body {
+    font-family: $font-inter;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0;
+
+    @include media(1380) {
+        max-width: calc(100% - 60px);
+    }
+
+    @include media(700) {
+        max-width: calc(100% - 32px);
+    }
+}
+
+// Alohida
