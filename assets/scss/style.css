@@ -4,6 +4,7 @@ body {
   font-family: "Inter", serif;
   font-style: italic;
   font-weight: 600;
+  background: #F4F4F4;
 }
 
 .container {
@@ -37,4 +38,10 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.6;
+}
+.home-container {
+  padding-top: 189px;
+}
+.home h1 {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
