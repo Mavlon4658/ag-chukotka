@@ -656,6 +656,32 @@ body {
     padding: 50px 0;
   }
 }
+.tours.tours-page {
+  padding-top: 0 !important;
+}
+.tours h2 {
+  background: linear-gradient(138.49deg, #0090C7 23.48%, #0328EA 139.21%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding-left: 50px;
+  font-size: 50px;
+  line-height: 135%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1100px) {
+  .tours h2 {
+    padding-left: 0;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .tours h2 {
+    font-size: 32px;
+  }
+}
 .tours .row {
   --bs-gutter-x: 21px;
   --bs-gutter-y: 20px;
@@ -696,6 +722,10 @@ body {
 }
 .tours-card.bg-blue {
   background: linear-gradient(138.49deg, #0090C7 23.48%, #0328EA 139.21%);
+}
+.tours-card.bg-blue h4 {
+  color: #0090C7;
+  background: white;
 }
 .tours-card.bg-yellow {
   background: linear-gradient(134.91deg, #F07D49 -19.66%, #FFD15B 138%);
@@ -1860,6 +1890,7 @@ body {
 
 .breadcrumb {
   padding: 119px 0 30px;
+  margin: 0;
 }
 @media screen and (max-width: 700px) {
   .breadcrumb {

@@ -641,6 +641,31 @@ body {
         padding: 50px 0;
     }
 
+    &.tours-page {
+        padding-top: 0 !important;
+    }
+
+    h2 {
+        background: $color-gradient;
+        color: transparent;
+        background-clip: text;
+        padding-left: 50px;
+        font-size: 50px;
+        line-height: 135%;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @include media(1100) {
+            padding-left: 0;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+        }
+    }
+
     .row {
         --bs-gutter-x: 21px;
         --bs-gutter-y: 20px;
@@ -680,6 +705,11 @@ body {
         &.bg {
             &-blue {
                 background: linear-gradient(138.49deg, #0090C7 23.48%, #0328EA 139.21%);
+
+                h4 {
+                    color: #0090C7;
+                    background: white;
+                }
             }
 
             &-yellow {
@@ -1886,6 +1916,7 @@ body {
 // Breadcrumb
 .breadcrumb {
     padding: 119px 0 30px;
+    margin: 0;
 
     @include media(700) {
         padding: 113px 0 50px;
