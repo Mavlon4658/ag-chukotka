@@ -307,7 +307,7 @@ body {
         }
     }
 
-    &.active {
+    &.active, &.default {
         .header {
             &-logo {
                 color: $color-blue;
@@ -1305,6 +1305,12 @@ body {
                 padding: 24px 20px;
             }
 
+            &:hover {
+                .main-img img {
+                    transform: scale(1.15);
+                }
+            }
+
             .main-img {
                 position: absolute;
                 top: 0;
@@ -1328,6 +1334,7 @@ body {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: .2s ease all;
                 }
             }
 
@@ -1770,3 +1777,108 @@ body {
     }
 }
 // Footer end
+
+// Error page
+.error-page {
+    height: calc(100vh - 278px);
+    min-height: 780px;
+
+    @include media(992) {
+        height: calc(100vh - 412px);
+        min-height: 810px;
+    }
+
+    @include media(700) {
+        height: calc(100vh - 651px);
+        min-height: 627px;
+        padding-top: 69px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+        @include media(1100) {
+            display: none;
+        }
+
+        &.lg {
+            display: none;
+
+            @include media(1100) {
+                display: block;
+            }
+
+            @include media(700) {
+                display: none;
+            }
+        }
+
+        &.sm {
+            display: none;
+
+            @include media(700) {
+                display: block;
+            }
+        }
+    }
+
+    &__number {
+        height: 490px;
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: -47px;
+
+        @include media(700) {
+            height: 252px;
+            margin-bottom: -21px;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #0252DD;
+        margin-bottom: 14px;
+        
+        br {
+            display: none;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 150%;
+        max-width: 345px;
+        color: $color-text-gray;
+        margin-bottom: 30px;
+
+        @include media(700) {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        @include media(992) {
+            width: 100%;
+        }
+    }
+}
+// Error page end
