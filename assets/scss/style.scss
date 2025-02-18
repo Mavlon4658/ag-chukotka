@@ -2267,3 +2267,108 @@ body {
     }
 }
 // Article end
+
+// Policy
+.policy {
+    margin-bottom: 70px;
+    padding-top: 30px;
+
+    @include media(1100) {
+        padding-top: 0;
+    }
+
+    @include media(700) {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 135%;
+        text-transform: uppercase;
+        background: $color-gradient;
+        color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+
+        @include media(1100) {
+            font-size: 40px;
+        }
+
+        @include media(700) {
+            font-size: 24px;
+        }
+    }
+
+    &-content {
+        gap: 30px;
+        counter-reset: item;
+
+        @include media(1100) {
+
+        }
+
+        &__wrap {
+            max-width: 1048px;
+            margin-left: 50px;
+
+            @include media(1100) {
+                margin-left: 0;
+            }
+        }
+        
+        &__item {
+            &::before {
+                content: counters(item, ".") ". ";
+                counter-increment: item;
+                display: inline;
+                font-size: 20px;
+                line-height: 140%;
+                color: $color-text-dark;
+
+                @include media(700) {
+                    font-size: 16px;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 140%;
+                color: $color-text-dark;
+                display: inline;
+
+                @include media(700) {
+                    font-size: 16px;
+                }
+            }
+            
+            ol {
+                margin-top: 20px;
+                gap: 21px;
+                counter-reset: item;
+            }
+
+            li {
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 150%;
+                color: $color-text-dark;
+
+                &::before {
+                    content: counters(item, ".") " ";
+                    counter-increment: item;
+                }
+
+                ul {
+                    list-style-type: disc;
+                    padding-left: 21px;
+
+                    ::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// Policy end
