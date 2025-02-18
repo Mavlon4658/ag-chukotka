@@ -1258,7 +1258,7 @@ body {
         line-height: 135%;
         text-transform: uppercase;
         margin-bottom: 40px;
-        margin-left: 60px;
+        margin-left: 50px;
         
         @include media(1100) {
             margin-left: 0;
@@ -1882,3 +1882,91 @@ body {
     }
 }
 // Error page end
+
+// Breadcrumb
+.breadcrumb {
+    padding: 119px 0 30px;
+
+    @include media(700) {
+        padding: 113px 0 50px;
+    }
+
+    &-container {
+        padding-left: 50px;
+        gap: 5px;
+
+        @include media(1100) {
+            padding-left: 0;
+        }
+    }
+
+    a, span {
+        color: $color-text-gray;
+        font-size: 12px;
+        line-height: 107%;
+        font-weight: 400;
+
+        &.text-blue {
+            color: $color-blue;
+        }
+    }
+}
+// Breadcrumb end
+
+// Pagination
+.paginations {
+    gap: 16px;
+
+    @include media(700) {
+        justify-content: space-between !important;
+    }
+
+    &-btn {
+        background: #0252DD;
+        border-radius: 100px;
+        height: 40px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media(700) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    ul {
+        gap: 28px;
+
+        @include media(700) {
+            gap: 24px;
+        }
+
+        a, span {
+            font-size: 16px;
+            font-weight: 500;
+            color: $color-text-gray;
+
+            &.active {
+                position: relative;
+                z-index: 1;
+                color: white;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #0252DD;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+// Pagination end

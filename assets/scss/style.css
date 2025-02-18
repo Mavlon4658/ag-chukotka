@@ -1266,7 +1266,7 @@ body {
   line-height: 135%;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 @media screen and (max-width: 1100px) {
   .blog h2 {
@@ -1856,4 +1856,85 @@ body {
   .error-page a {
     width: 100%;
   }
+}
+
+.breadcrumb {
+  padding: 119px 0 30px;
+}
+@media screen and (max-width: 700px) {
+  .breadcrumb {
+    padding: 113px 0 50px;
+  }
+}
+.breadcrumb-container {
+  padding-left: 50px;
+  gap: 5px;
+}
+@media screen and (max-width: 1100px) {
+  .breadcrumb-container {
+    padding-left: 0;
+  }
+}
+.breadcrumb a, .breadcrumb span {
+  color: #6D6D6D;
+  font-size: 12px;
+  line-height: 107%;
+  font-weight: 400;
+}
+.breadcrumb a.text-blue, .breadcrumb span.text-blue {
+  color: #0090C7;
+}
+
+.paginations {
+  gap: 16px;
+}
+@media screen and (max-width: 700px) {
+  .paginations {
+    justify-content: space-between !important;
+  }
+}
+.paginations-btn {
+  background: #0252DD;
+  border-radius: 100px;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  .paginations-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.paginations ul {
+  gap: 28px;
+}
+@media screen and (max-width: 700px) {
+  .paginations ul {
+    gap: 24px;
+  }
+}
+.paginations ul a, .paginations ul span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6D6D6D;
+}
+.paginations ul a.active, .paginations ul span.active {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.paginations ul a.active::before, .paginations ul span.active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0252DD;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
