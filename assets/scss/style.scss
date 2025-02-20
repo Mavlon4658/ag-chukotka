@@ -3973,3 +3973,71 @@ body {
     }
 }
 // Features end
+
+// Await
+.await {
+    margin-bottom: 120px;
+
+    @include media(1100) {
+        margin-bottom: 70px;
+    }
+
+    h2 {
+        padding-left: 50px;
+        display: inline-block;
+        font-size: 40px;
+        line-height: 135%;
+        background: $color-gradient;
+        background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @include media(1100) {
+            margin-bottom: 30px;
+            padding: 0;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 21px;
+        --bs-gutter-y: 20px;
+        
+        @include media(1100) {
+            --bs-gutter-x: 24px;
+            --bs-gutter-y: 20px;
+        }
+        
+        @include media(700) {
+            --bs-gutter-y: 10px;
+        }
+    }
+
+    &-card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px 16px;
+
+        img {
+            flex-shrink: 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 140%;
+            color: $color-text-gray;
+            max-width: 316px;
+
+            @include media(700) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// Await end
