@@ -10,6 +10,8 @@ $color-text-gray: #6D6D6D;
 $color-text-dark: #161616;
 $color-orange: #F07D49;
 $color-gradient: linear-gradient(138.49deg, #0090C7 23.48%, #0328EA 139.21%);
+$color-gradient-orange: linear-gradient(134.91deg, #F07D49 -19.66%, #FFD15B 138%);
+$color-disable: #C9C9C9;
 // Colors end
 
 @mixin media($value) {
