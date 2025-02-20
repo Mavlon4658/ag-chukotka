@@ -3881,4 +3881,70 @@ body {
     gap: 16px;
     width: 100%;
   }
+}
+
+.await {
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 1100px) {
+  .await {
+    margin-bottom: 70px;
+  }
+}
+.await h2 {
+  padding-left: 50px;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 135%;
+  background: linear-gradient(138.49deg, #0090C7 23.48%, #0328EA 139.21%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1100px) {
+  .await h2 {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .await h2 {
+    font-size: 32px;
+  }
+}
+.await .row {
+  --bs-gutter-x: 21px;
+  --bs-gutter-y: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .await .row {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .await .row {
+    --bs-gutter-y: 10px;
+  }
+}
+.await-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px 16px;
+}
+.await-card img {
+  flex-shrink: 0;
+}
+.await-card p {
+  font-size: 14px;
+  line-height: 140%;
+  color: #6D6D6D;
+  max-width: 316px;
+}
+@media screen and (max-width: 700px) {
+  .await-card p br {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
