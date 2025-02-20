@@ -51,6 +51,37 @@ if (langs) {
     })
 }
 
+const tourChildSwp = new Swiper('.about-tour__swp .swp-child .swiper', {
+    slidesPerView: 4,
+    spaceBetween: 8,
+    breakpoints: {
+        1100: {
+            spaceBetween: 16,
+        },
+        700: {
+            spaceBetween: 14,
+        }
+    }
+})
+
+const tourParentSwp = new Swiper('.about-tour__swp .swp-parent .swiper', {
+    slidesPerView: 1,
+    // effect: 'fade',
+    thumbs: {
+        swiper: tourChildSwp,
+    },
+})
+
+const programMoreBtn = document.querySelector('.program .more-btn');
+const programCards = document.querySelector('.program-card__wrap');
+
+if (programCards) {
+    programMoreBtn.onclick = () => {
+        programCards.classList.add('active');
+        programMoreBtn.classList.add('hidden');
+    }
+}
+
 document.addEventListener('click', function (event) {
     if (langs && !langs.contains(event.target)) {
         langs.classList.remove('active');
