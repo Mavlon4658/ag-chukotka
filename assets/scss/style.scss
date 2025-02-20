@@ -3445,6 +3445,14 @@ body {
 .video-block {
     margin-bottom: 120px;
 
+    @include media(1100) {
+        margin-bottom: 70px;
+    }
+
+    @include media(700) {
+        margin-bottom: 50px;
+    }
+
     &__container {
         position: relative;
         z-index: 1;
@@ -3452,6 +3460,10 @@ body {
         border-radius: 20px;
         overflow: hidden;
         height: 524px;
+
+        @include media(700) {
+            height: 300px;
+        }
     }
 
     .main-img {
@@ -3470,6 +3482,15 @@ body {
         height: 130px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 30%);
+
+        @include media(700) {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 23px;
+            }
+        }
     }
 }
 // Video block end
@@ -3478,16 +3499,33 @@ body {
 .program {
     margin-bottom: 75px;
 
+    @include media(1100) {
+        margin-bottom: 0;
+    }
+
     &-container {
         position: relative;
         z-index: 1;
         overflow: hidden;
+
+        @include media(1100) {
+            max-width: 100%;
+        }
     }
 
     &-head {
         gap: 14px;
         margin-bottom: 46px;
         padding-left: 50px;
+
+        @include media(1100) {
+            padding: 0 30px;
+        }
+
+        @include media(700) {
+            flex-direction: column-reverse;
+            align-items: flex-start !important;
+        }
 
         h2 {
             font-size: 40px;
@@ -3496,6 +3534,10 @@ body {
             background-clip: text;
             text-transform: uppercase;
             line-height: 135%;
+
+            @include media(700) {
+                font-size: 32px;
+            }
         }
 
         span {
@@ -3515,6 +3557,14 @@ body {
         z-index: 1;
         padding: 40px 50px 30px;
 
+        @include media(1100) {
+            padding: 40px 30px 30px 50px;
+        }
+
+        @include media(700) {
+            padding: 40px 16px 30px;
+        }
+
         &__wrap {
             gap: 46px;
             position: relative;
@@ -3522,6 +3572,14 @@ body {
 
             &:not(.active) {
                 height: 711px;
+
+                @include media(1100) {
+                    height: 873px;
+                }
+
+                @include media(700) {
+                    height: 1081px;
+                }
 
                 &::after {
                     content: "";
@@ -3534,6 +3592,10 @@ body {
                     background: linear-gradient(178.29deg, rgba(255, 255, 255, 0.4) 1.45%, #F4F4F4 55.7%);
                     backdrop-filter: blur(1px);
                 }
+            }
+
+            &.active {
+                padding-bottom: 50px;
             }
         }
 
@@ -3548,6 +3610,14 @@ body {
             padding: 8.5px 24px;
             font-size: 14px;
             line-height: 107%;
+
+            @include media(1100) {
+                left: 30px;
+            }
+
+            @include media(700) {
+                left: 16px;
+            }
         }
 
         .name {
@@ -3579,8 +3649,17 @@ body {
         &__list {
             gap: 30px;
 
+            @include media(700) {
+                gap: 30px 12px;
+            }
+
             li {
                 gap: 16px;
+
+                @include media(700) {
+                    width: calc(50% - 6px);
+                    gap: 12px;
+                }
             }
 
             .icon {
@@ -3609,9 +3688,133 @@ body {
         bottom: 45px;
         transform: translateX(-50%);
 
+        @include media(1100) {
+            width: calc(100% - 60px);
+        }
+
+        @include media(700) {
+            width: calc(100% - 32px);
+        }
+
         &.hidden {
             display: none !important;
         }
     }
 }
 // Program end
+
+// Galereya
+.galereya {
+    margin-bottom: 120px;
+
+    @include media(1100) {
+        margin-bottom: 70px;
+    }
+
+    @include media(700) {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 135%;
+        display: inline-block;
+        background: $color-gradient;
+        background-clip: text;
+        color: transparent;
+        padding: 0 0 40px 50px;    
+        
+        @include media(1100) {
+            padding: 0 0 30px;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 472px calc((100% - 472px) / 3 - 10px) calc((100% - 472px) / 3 - 10px) calc((100% - 472px) / 3 - 10px);
+        grid-auto-rows: 265px;
+        gap: 10px;
+
+        @include media(1100) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        @include media (800) {
+            grid-auto-rows: 250px;
+        }
+
+        @include media(700) {
+            grid-auto-rows: 195px;
+            gap: 16px;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        li {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            
+            @include media(1100) {
+                order: 1;
+            }
+
+            @include media(700) {
+                grid-column: span 1 !important;
+            }
+
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(2, 82, 221, 0.8);
+                color: white;
+                font-size: 20px;
+                line-height: 14;
+                color: white;
+            }
+
+            &:nth-child(1) {
+                @include media(-1100) {
+                    grid-row: span 2;
+                }
+            }
+
+            &:nth-child(3) {
+                @include media(1100) {
+                    grid-column: span 2;
+                }
+            }
+
+            &:nth-child(4) {
+                @include media(1100) {
+                    order: 2;
+                    grid-column: span 2;
+                }
+            }
+
+
+            &:nth-child(6) {
+                @include media(-1100) {
+                    grid-column: span 2;
+                }
+            }
+
+            &:nth-child(7) {
+                grid-column: span 2;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+// Galereya end
