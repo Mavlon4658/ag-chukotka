@@ -3640,6 +3640,14 @@ body {
   line-height: 150%;
   color: #6D6D6D;
 }
+.program-card__text li a {
+  font-size: 14px;
+  line-height: 140%;
+  color: #0090C7;
+  text-decoration: underline;
+  font-weight: 600;
+  font-style: italic;
+}
 .program-card .line {
   margin: 24px 0;
   height: 1px;
@@ -4685,4 +4693,292 @@ body {
 }
 .search-modal ul a:hover {
   color: #0090C7;
+}
+
+.nutrition-modal .modal-dialog {
+  min-width: 890px;
+}
+@media screen and (max-width: 992px) {
+  .nutrition-modal .modal-dialog {
+    min-width: calc(100% - 32px);
+  }
+}
+.nutrition-modal .modal-content {
+  border: 0;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media screen and (max-width: 992px) {
+  .nutrition-modal .modal-content {
+    padding: 30px 24px;
+  }
+}
+.nutrition-modal button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(2, 82, 221, 0.3);
+  top: 30px;
+  right: 30px;
+}
+@media screen and (max-width: 992px) {
+  .nutrition-modal button {
+    top: 24px;
+    right: 24px;
+  }
+}
+.nutrition-modal h2 {
+  font-family: "Montserrat Alternates", serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #0090C7;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .nutrition-modal h2 {
+    font-size: 20px;
+  }
+}
+.nutrition-modal p {
+  max-width: 735px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  color: #6D6D6D;
+}
+
+.day-modal .modal-dialog {
+  min-width: 890px;
+}
+@media screen and (max-width: 992px) {
+  .day-modal .modal-dialog {
+    min-width: calc(100% - 32px);
+  }
+}
+.day-modal .modal-content {
+  border: 0;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media screen and (max-width: 992px) {
+  .day-modal .modal-content {
+    padding: 30px 24px;
+  }
+}
+.day-modal button {
+  border: 1px solid rgba(2, 82, 221, 0.3);
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+}
+@media screen and (max-width: 992px) {
+  .day-modal button {
+    top: 24px;
+    right: 24px;
+  }
+}
+.day-modal h3 {
+  padding: 8.5px 24px;
+  display: inline-block;
+  background: #0090C7;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 107%;
+  color: white;
+  margin-bottom: 20px;
+}
+.day-modal h2 {
+  font-size: 20px;
+  line-height: 140%;
+  color: #161616;
+  margin-bottom: 30px;
+}
+.day-modal .texts {
+  gap: 12px;
+}
+.day-modal .texts li {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  color: #6D6D6D;
+}
+.day-modal .line {
+  height: 1px;
+  width: 100%;
+  background: #C9C9C9;
+  margin: 24px 0;
+}
+@media screen and (max-width: 700px) {
+  .day-modal .program-card__list li {
+    width: 100%;
+  }
+}
+
+.book-tour .modal-dialog {
+  min-width: 890px;
+}
+@media screen and (max-width: 992px) {
+  .book-tour .modal-dialog {
+    min-width: calc(100% - 32px);
+  }
+}
+.book-tour .modal-content {
+  border: 0;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media screen and (max-width: 700px) {
+  .book-tour .modal-content {
+    padding: 30px 24px;
+  }
+}
+.book-tour .btn_close {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(2, 82, 221, 0.3);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+@media screen and (max-width: 700px) {
+  .book-tour .btn_close {
+    top: 24px;
+    right: 24px;
+  }
+}
+.book-tour h3 {
+  padding: 9.5px 24px;
+  background: #0252DD;
+  color: white;
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 107%;
+  margin-bottom: 20px;
+}
+.book-tour h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", serif;
+  line-height: 135%;
+  max-width: 593px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  .book-tour h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .book-tour .btn_blue, .book-tour .btn_orange {
+    width: 100%;
+  }
+}
+
+.form_control {
+  width: 100%;
+}
+.form_control__wrap {
+  gap: 20px;
+  width: 100%;
+}
+.form_control label {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 135%;
+  color: #6D6D6D;
+  display: block;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 700px) {
+  .form_control label {
+    font-size: 12px;
+  }
+}
+.form_control__inp {
+  width: 100%;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  height: 42px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 135%;
+  color: #161616;
+}
+@media screen and (max-width: 700px) {
+  .form_control__inp {
+    font-size: 12px;
+  }
+}
+.form_control__inp::-moz-placeholder {
+  color: #C9C9C9;
+}
+.form_control__inp::placeholder {
+  color: #C9C9C9;
+}
+.form_control__inp:hover, .form_control__inp:focus {
+  border-color: #6D6D6D;
+}
+.form_control textarea {
+  padding: 16px;
+  height: 150px;
+  resize: none;
+}
+
+.form_checkbox {
+  gap: 10px;
+  margin: 16px 0 30px;
+}
+.form_checkbox input {
+  display: none;
+}
+.form_checkbox .icon {
+  border: 1px solid #C9C9C9;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_checkbox .icon img {
+  display: none;
+}
+.form_checkbox input:checked ~ .icon {
+  background: #0252DD;
+  border-color: #0252DD;
+}
+.form_checkbox input:checked ~ .icon img {
+  display: block;
+}
+.form_checkbox p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #6D6D6D;
+}
+@media screen and (max-width: 700px) {
+  .form_checkbox p {
+    line-height: 20px;
+  }
+}
+.form_checkbox p a {
+  color: #0090C7;
+  text-decoration: underline;
+  display: inline;
 }/*# sourceMappingURL=style.css.map */

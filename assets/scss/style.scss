@@ -3740,6 +3740,15 @@ body {
                 font-style: normal;
                 line-height: 150%;
                 color: $color-text-gray;
+
+                a {
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: $color-blue;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    font-style: italic;
+                }
             }
         }
 
@@ -4851,3 +4860,316 @@ body {
     }
 }
 // Search modal end
+
+// Nutrition modal
+.nutrition-modal {
+    .modal-dialog {
+        min-width: 890px;
+
+        @include media(992) {
+            min-width: calc(100% - 32px);
+        }
+    }
+
+    .modal-content {
+        border: 0;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include media(992) {
+            padding: 30px 24px;
+        }
+    }
+
+    button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(2, 82, 221, 0.3);
+        top: 30px;
+        right: 30px;
+
+        @include media(992) {
+            top: 24px;
+            right: 24px;
+        }
+    }
+
+    h2 {
+        font-family: $font-montserrat;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 135%;
+        text-transform: uppercase;
+        color: $color-blue;
+        margin-bottom: 30px;
+
+        @include media(992) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        max-width: 735px;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 150%;
+        color: $color-text-gray;
+    }
+}
+// Nutrition modal end
+
+// Day modal
+.day-modal {
+    .modal-dialog {
+        min-width: 890px;
+
+        @include media(992) {
+            min-width: calc(100% - 32px);
+        }
+    }
+    
+    .modal-content {
+        border: 0;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include media(992) {
+            padding: 30px 24px;
+        }
+    }
+
+    button {
+        border: 1px solid rgba(2, 82, 221, 0.3);
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        right: 30px;
+        position: absolute;
+
+        @include media(992) {
+            top: 24px;
+            right: 24px;
+        }
+    }
+    
+    h3 {
+        padding: 8.5px 24px;
+        display: inline-block;
+        background: $color-blue;
+        border-radius: 50px;
+        font-size: 14px;
+        line-height: 107%;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 140%;
+        color: $color-text-dark;
+        margin-bottom: 30px;
+    }
+
+    .texts {
+        gap: 12px;
+
+        li {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 150%;
+            color: $color-text-gray;
+        }
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background: $color-disable;
+        margin: 24px 0;
+    }
+
+    .program-card__list {
+        li {
+            @include media(700) {
+                width: 100%;
+            }
+        }
+    }
+}
+// Day modal end
+
+// Book tour
+.book-tour {
+    .modal-dialog {
+        min-width: 890px;
+
+        @include media(992) {
+            min-width: calc(100% - 32px);
+        }
+    }
+
+    .modal-content {
+        border: 0;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include media(700) {
+            padding: 30px 24px;
+        }
+    }
+
+    .btn_close {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(2, 82, 221, 0.3);
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        @include media(700) {
+            top: 24px;
+            right: 24px;
+        }
+    }
+
+    h3 {
+        padding: 9.5px 24px;
+        background: $color-main-blue-dark;
+        color: white;
+        border-radius: 50px;
+        font-size: 12px;
+        line-height: 107%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $font-montserrat;
+        line-height: 135%;
+        max-width: 593px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @include media(700) {
+            font-size: 16px;
+        }
+    }
+
+    .btn_blue, .btn_orange {
+        @include media(700) {
+            width: 100%;
+        }
+    }
+}
+// Book tour end
+
+.form_control {
+    width: 100%;
+
+    &__wrap {
+        gap: 20px;
+        width: 100%;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 135%;
+        color: $color-text-gray;
+        display: block;
+        margin-bottom: 8px;
+
+        @include media(700) {
+            font-size: 12px;
+        }
+    }
+
+    &__inp {
+        width: 100%;
+        border: 1px solid #E4E4E4;
+        border-radius: 4px;
+        height: 42px;
+        padding: 0 16px;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 135%;
+        color: $color-text-dark;
+
+        @include media(700) {
+            font-size: 12px;
+        }
+
+        &::placeholder {
+            color: $color-disable;
+        }
+
+        &:hover, &:focus {
+            border-color: $color-text-gray;
+        }
+    }
+
+    textarea {
+        padding: 16px;
+        height: 150px;
+        resize: none;
+    }
+}
+
+.form_checkbox {
+    gap: 10px;
+    margin: 16px 0 30px;
+
+    input {
+        display: none;
+    }
+
+    .icon {
+        border: 1px solid $color-disable;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    input:checked ~ .icon {
+        background: $color-main-blue-dark;
+        border-color: $color-main-blue-dark;
+
+        img {
+            display: block;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: $color-text-gray;
+
+        @include media(700) {
+            line-height: 20px;
+        }
+
+        a {
+            color: $color-blue;
+            text-decoration: underline;
+            display: inline;
+        }
+    }
+}
