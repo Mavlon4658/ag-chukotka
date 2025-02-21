@@ -82,6 +82,20 @@ if (programCards) {
     }
 }
 
+const mainAccordions = document.querySelectorAll('.main-accordion');
+
+if (mainAccordions.length) {
+    mainAccordions.forEach((item) => {
+        const h = item.querySelector('.main-accordion__btn');
+        const b = item.querySelector('.main-accordion__body');
+    
+        h.addEventListener('click', () => {
+            h.classList.toggle('active');
+            b.style.maxHeight = b.style.maxHeight ? null : b.scrollHeight + 'px';
+        });
+    });
+}
+
 document.addEventListener('click', function (event) {
     if (langs && !langs.contains(event.target)) {
         langs.classList.remove('active');
