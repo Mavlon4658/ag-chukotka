@@ -96,6 +96,17 @@ if (mainAccordions.length) {
     });
 }
 
+const galereyaSwp = new Swiper('.galereya-modal .swiper', {
+    slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.galereya-modal .swp-btn__next',
+        prevEl: '.galereya-modal .swp-btn__prev',
+    }
+})
+
 document.addEventListener('click', function (event) {
     if (langs && !langs.contains(event.target)) {
         langs.classList.remove('active');

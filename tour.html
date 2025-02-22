@@ -51,7 +51,6 @@
                                 <img src="./assets/images/chevron-down-blue.svg" alt="">
                             </div>
                             <ul class="langs-list">
-                                <li class="selected">RU</li>
                                 <li>EN</li>
                             </ul>
                         </div>
@@ -149,7 +148,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <input type="text" placeholder="Search">
+                        <input type="search" placeholder="Search">
                     </div>
                     <div class="modal-body">
                         <ul>
@@ -537,7 +536,7 @@
                             </h3>
                             <h2>Путешествие по краю земли: мыс дженева и киты берингова моря</h2>
                             <div class="features-list__right d-flex align-items-center btns">
-                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
+                                <a href="#" class="btn_blue" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                                 <a href="#" class="btn_light" data-bs-toggle="modal" data-bs-target="#tourModal">Заявка на корпоративный тур</a>
                             </div>
                         </div>
@@ -634,7 +633,7 @@
             <section class="video-block">
                 <div class="container video-block__container d-flex align-items-center justify-content-center">
                     <img src="./assets/images/video-block-card.png" alt="" class="main-img">
-                    <a href="#" class="d-flex align-items-center justify-content-center">
+                    <a href="#" class="d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#videoModal">
                         <img src="./assets/images/play-icon.svg" alt="">
                     </a>
                 </div>
@@ -660,32 +659,38 @@
                                 <li>Ужин в ресторане гостиницы (за доп. плату).</li>
                             </ul>
                             <div class="line"></div>
-                            <ul class="program-card__list d-flex align-items-center flex-wrap">
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-1.svg" alt="">
-                                    </div>
-                                    <p>Проживание в отеле, <br> гостинице</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-2.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> электричества</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-3.svg" alt="">
-                                    </div>
-                                    <p>Наличие сети, <br> чтобы позвонить</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-4.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> душа</p>
-                                </li>
-                            </ul>
+                            <div class="program-card__foot d-flex flex-column flex-xl-row align-items-start align-items-xl-center justify-content-between gap-3 gap-xl-0">
+                                <ul class="program-card__list d-flex align-items-center flex-wrap">
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-1.svg" alt="">
+                                        </div>
+                                        <p>Проживание в отеле, <br> гостинице</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-2.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> электричества</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-3.svg" alt="">
+                                        </div>
+                                        <p>Наличие сети, <br> чтобы позвонить</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-4.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> душа</p>
+                                    </li>
+                                </ul>
+                                <div class="btns flex-column flex-sm-row align-items-center gap-2 gap-xl-3">
+                                    <a href="#" class="btn_blue">Забронировать тур</a>
+                                    <a href="#" class="btn_orange">Заявка на корп. тур</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="program-card">
                             <div class="day">2 день</div>
@@ -701,32 +706,38 @@
                                 </li>
                             </ul>
                             <div class="line"></div>
-                            <ul class="program-card__list d-flex align-items-center flex-wrap">
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-1.svg" alt="">
-                                    </div>
-                                    <p>Проживание в отеле, <br> гостинице</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-2.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> электричества</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-3.svg" alt="">
-                                    </div>
-                                    <p>Наличие сети, <br> чтобы позвонить</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-4.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> душа</p>
-                                </li>
-                            </ul>
+                            <div class="program-card__foot d-flex flex-column flex-xl-row align-items-start align-items-xl-center justify-content-between gap-3 gap-xl-0">
+                                <ul class="program-card__list d-flex align-items-center flex-wrap">
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-1.svg" alt="">
+                                        </div>
+                                        <p>Проживание в отеле, <br> гостинице</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-2.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> электричества</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-3.svg" alt="">
+                                        </div>
+                                        <p>Наличие сети, <br> чтобы позвонить</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-4.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> душа</p>
+                                    </li>
+                                </ul>
+                                <div class="btns flex-column flex-sm-row align-items-center gap-2 gap-xl-3">
+                                    <a href="#" class="btn_blue">Забронировать тур</a>
+                                    <a href="#" class="btn_orange">Заявка на корп. тур</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="program-card">
                             <div class="day">3 день</div>
@@ -739,38 +750,84 @@
                                 <li>Ужин в ресторане гостиницы (за доп. плату).</li>
                             </ul>
                             <div class="line"></div>
-                            <ul class="program-card__list d-flex align-items-center flex-wrap">
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-1.svg" alt="">
-                                    </div>
-                                    <p>Проживание в отеле, <br> гостинице</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-2.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> электричества</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-3.svg" alt="">
-                                    </div>
-                                    <p>Наличие сети, <br> чтобы позвонить</p>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="icon d-flex align-items-center justify-content-center rounded-circle">
-                                        <img src="./assets/images/program-card-icon-4.svg" alt="">
-                                    </div>
-                                    <p>Наличие <br> душа</p>
-                                </li>
-                            </ul>
+                            <div class="program-card__foot d-flex flex-column flex-xl-row align-items-start align-items-xl-center justify-content-between gap-3 gap-xl-0">
+                                <ul class="program-card__list d-flex align-items-center flex-wrap">
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-1.svg" alt="">
+                                        </div>
+                                        <p>Проживание в отеле, <br> гостинице</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-2.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> электричества</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-3.svg" alt="">
+                                        </div>
+                                        <p>Наличие сети, <br> чтобы позвонить</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                            <img src="./assets/images/program-card-icon-4.svg" alt="">
+                                        </div>
+                                        <p>Наличие <br> душа</p>
+                                    </li>
+                                </ul>
+                                <div class="btns flex-column flex-sm-row align-items-center gap-2 gap-xl-3">
+                                    <a href="#" class="btn_blue">Забронировать тур</a>
+                                    <a href="#" class="btn_orange">Заявка на корп. тур</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="btn_blue more-btn">Смотреть всю программу</button>
                 </div>
             </section>
             <!-- Program end -->
+
+            <!-- Galereya modal -->
+            <div class="modal galereya-modal fade" id="galereyaModal" tabindex="-1" aria-labelledby="galereyaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <button class="btn_close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./assets/images/times-white.svg" alt="" width="20">
+                        </button>
+                        <button class="swp-btn swp-btn__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                        </button>
+                        <button class="swp-btn swp-btn__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        </button>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/galereya-card-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Galereya modal end -->
 
             <!-- Galereya -->
             <section class="galereya">
@@ -788,7 +845,7 @@
                         </li>
                         <li>
                             <img src="./assets/images/galereya-card-4.png" alt="">
-                            <a href="#" class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">еще 40 фото</a>
+                            <a href="#" class="position-absolute d-flex align-items-center justify-content-center w-100 h-100" data-bs-toggle="modal" data-bs-target="#galereyaModal">еще 40 фото</a>
                         </li>
                         <li>
                             <img src="./assets/images/galereya-card-5.png" alt="">
@@ -847,35 +904,35 @@
                             <h4>С 05 июля по 19 июля 2024</h4>
                             <div class="features-list__right d-flex align-items-center">
                                 <p>350 000₽ / <span>чел</span></p>
-                                <a href="#" class="btn_white">Забронировать тур</a>
+                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                             </div>
                         </li>
                         <li class="features-list d-flex align-items-center justify-content-between w-100">
                             <h4>С 19 июля по 02 августа 2024</h4>
                             <div class="features-list__right d-flex align-items-center">
                                 <p>350 000₽ / <span>чел</span></p>
-                                <a href="#" class="btn_white">Забронировать тур</a>
+                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                             </div>
                         </li>
                         <li class="features-list d-flex align-items-center justify-content-between w-100">
                             <h4>С 02 августа по 16 августа 2024</h4>
                             <div class="features-list__right d-flex align-items-center">
                                 <p>350 000₽ / <span>чел</span></p>
-                                <a href="#" class="btn_white">Забронировать тур</a>
+                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                             </div>
                         </li>
                         <li class="features-list d-flex align-items-center justify-content-between w-100">
                             <h4>С 16 августа по 30 августа 2024</h4>
                             <div class="features-list__right d-flex align-items-center">
                                 <p>350 000₽ / <span>чел</span></p>
-                                <a href="#" class="btn_white">Забронировать тур</a>
+                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                             </div>
                         </li>
                         <li class="features-list d-flex align-items-center justify-content-between w-100">
                             <h4>С 30 августа по 13 сентября 2024</h4>
                             <div class="features-list__right d-flex align-items-center">
                                 <p>350 000₽ / <span>чел</span></p>
-                                <a href="#" class="btn_white">Забронировать тур</a>
+                                <a href="#" class="btn_white" data-bs-toggle="modal" data-bs-target="#bookTour">Забронировать тур</a>
                             </div>
                         </li>
                     </ul>
@@ -1234,7 +1291,7 @@
                     <div class="work-map">
                         <h3>Карта тура</h3>
                         <div class="work-map__img">
-                            <img src="./assets/images/work-map.png" alt="">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A158835466e1e0497cd9313c072a23d98abe98805225ede1960a23d20d48d81e7&amp;source=constructor" width="1280" height="689" frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
