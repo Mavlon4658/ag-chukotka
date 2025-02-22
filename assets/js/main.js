@@ -107,6 +107,16 @@ const galereyaSwp = new Swiper('.galereya-modal .swiper', {
     }
 })
 
+const phoneInp = document.querySelectorAll('input[type="tel"]');
+
+if (phoneInp.length) {
+    phoneInp.forEach(el => {
+        IMask(el, {
+            mask: '+{7}(000) 000-00-00',
+        })
+    });
+}
+
 document.addEventListener('click', function (event) {
     if (langs && !langs.contains(event.target)) {
         langs.classList.remove('active');
