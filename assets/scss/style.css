@@ -107,8 +107,9 @@ body {
   border: 1px solid white;
 }
 .btn_white:hover {
-  background: transparent;
+  background: #0252DD;
   color: white;
+  border-color: #0252DD;
 }
 .btn_light {
   background: transparent;

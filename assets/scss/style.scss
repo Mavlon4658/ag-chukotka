@@ -40,8 +40,9 @@ body {
         border: 1px solid white;
 
         &:hover {
-            background: transparent;
+            background: $color-main-blue-dark;
             color: white;
+            border-color: $color-main-blue-dark;
         }
     }
 
