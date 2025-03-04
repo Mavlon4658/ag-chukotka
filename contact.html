@@ -279,7 +279,13 @@
         <div class="modal video-modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/vgyiJ9jW2fE" title="Экспедиционные  туры на Чукотку" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <button type="button" class="modal-close d-flex align-items-center justify-content-center rounded-pill" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="./assets/images/times-white.svg" alt="">
+                    </button>
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                    </video>
                 </div>
             </div>
         </div>
@@ -323,7 +329,7 @@
                     <h2>Контакты</h2>
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A276ca799209011a25694d4420c8f601a1b33cc28d5bcd1736ec8be814ba99dfb&amp;source=constructor" width="1280" height="720" frameborder="0"></iframe>
                     <div class="contact-content d-flex flex-wrap">
-                        <img src="./assets/images/contact-content-bg.png" alt="" class="contact-content__bg">
+                        <!-- <img src="./assets/images/contact-content-bg.png" alt="" class="contact-content__bg"> -->
                         <div class="contact-content__item d-flex flex-column">
                             <label for="">Номер телефона</label>
                             <a href="tel:+7(968) 858 00 93">+7(968) 858 00 93</a>
