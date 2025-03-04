@@ -192,8 +192,17 @@ body {
         color: white;
         font-weight: bold;
 
+        svg {
+            height: 15px;
+            width: auto;
+        }
+
         @include media(1100) {
             font-size: 16px;
+
+            svg {
+                height: 12px;
+            }
         }
 
         @include media(700) {
@@ -379,8 +388,8 @@ body {
 
     &.active, &.default {
         .header {
-            &-logo {
-                color: $color-blue;
+            &-logo svg path {
+                fill: $color-blue;
             }
 
             &-navs {
@@ -1822,6 +1831,19 @@ body {
 
             @include media(700) {
                 font-size: 30px;
+            }
+        }
+
+        svg {
+            height: 22px;
+            width: auto;
+
+            @include media(1200) {
+                height: 15px;
+            }
+
+            @include media(700) {
+                height: 22px;
             }
         }
 
