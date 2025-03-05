@@ -192,15 +192,19 @@ body {
         color: white;
         font-weight: bold;
 
-        svg {
+        img {
             height: 15px;
             width: auto;
+
+            &:nth-child(2) {
+                display: none;
+            }
         }
 
         @include media(1100) {
             font-size: 16px;
 
-            svg {
+            img {
                 height: 12px;
             }
         }
@@ -388,8 +392,12 @@ body {
 
     &.active, &.default {
         .header {
-            &-logo svg path {
-                fill: $color-blue;
+            &-logo img {
+                display: none;
+
+                &:nth-child(2) {
+                    display: block;
+                }
             }
 
             &-navs {
@@ -1834,7 +1842,7 @@ body {
             }
         }
 
-        svg {
+        img {
             height: 22px;
             width: auto;
 
